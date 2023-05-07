@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2297F874299E3B5C007A481C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F873299E3B5C007A481C /* AppDelegate.swift */; };
+		2297F878299E3B5C007A481C /* ChargeStationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F877299E3B5C007A481C /* ChargeStationsViewController.swift */; };
+		2297F87D299E3B5E007A481C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2297F87C299E3B5E007A481C /* Assets.xcassets */; };
+		2297F880299E3B5E007A481C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2297F87E299E3B5E007A481C /* LaunchScreen.storyboard */; };
+		2297F8B2299E4030007A481C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8B1299E4030007A481C /* Coordinator.swift */; };
+		2297F8B5299E404D007A481C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8B4299E404D007A481C /* AppCoordinator.swift */; };
+		2297F8B7299E40A7007A481C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8B6299E40A7007A481C /* Constants.swift */; };
+		2297F8BA299E40E4007A481C /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8B9299E40E4007A481C /* UIViewController+Alert.swift */; };
+		2297F8BD299E4123007A481C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8BC299E4123007A481C /* ViewController.swift */; };
+		2297F8BF299E4376007A481C /* ChargeStationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8BE299E4376007A481C /* ChargeStationsViewModel.swift */; };
+		2297F8C1299E5961007A481C /* ChargeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8C0299E5961007A481C /* ChargeStation.swift */; };
+		2297F8C3299E599E007A481C /* ChargeStationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8C2299E599E007A481C /* ChargeStationDetailViewModel.swift */; };
+		2297F8C5299E59D4007A481C /* ChargeStationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8C4299E59D4007A481C /* ChargeStationDetailViewController.swift */; };
+		2297F8C7299E696E007A481C /* MKMapView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8C6299E696E007A481C /* MKMapView+Extensions.swift */; };
+		2297F8C9299E6C8E007A481C /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8C8299E6C8E007A481C /* UIStackView+Extensions.swift */; };
+		2297F8CE299E7DE6007A481C /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8CD299E7DE6007A481C /* RequestError.swift */; };
+		2297F8D0299E7DF0007A481C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8CF299E7DF0007A481C /* HTTPMethod.swift */; };
+		2297F8D2299E7E02007A481C /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8D1299E7E02007A481C /* RequestProtocol.swift */; };
+		2297F8D5299E7E1F007A481C /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8D4299E7E1F007A481C /* NetworkManagerProtocol.swift */; };
+		2297F8D7299E7E26007A481C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8D6299E7E26007A481C /* NetworkManager.swift */; };
+		2297F8DA299E81B1007A481C /* GetChargeStationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8D9299E81B1007A481C /* GetChargeStationRequest.swift */; };
+		2297F8DD299E87BF007A481C /* ChargeStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8DC299E87BF007A481C /* ChargeStationsService.swift */; };
+		2297F8DF299E87CC007A481C /* ChargeStationsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8DE299E87CC007A481C /* ChargeStationsServiceProtocol.swift */; };
+		2297F8E1299E96BC007A481C /* StationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F8E0299E96BC007A481C /* StationAnnotation.swift */; };
+		229AAE49299EA80B00233BC4 /* RequestProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229AAE48299EA80B00233BC4 /* RequestProtocolTests.swift */; };
+		229AAE4E299EA9FB00233BC4 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229AAE4D299EA9FB00233BC4 /* AppCoordinatorTests.swift */; };
+		229AAE54299EB62900233BC4 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229AAE53299EB62900233BC4 /* MockURLProtocol.swift */; };
+		229AAE56299EB78E00233BC4 /* ChargeStationsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229AAE55299EB78E00233BC4 /* ChargeStationsServiceTests.swift */; };
+		229E6E6B299F6F08006EDCDF /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 229E6E6A299F6F08006EDCDF /* MockResponse.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2297F887299E3B5E007A481C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2297F868299E3B5C007A481C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2297F86F299E3B5C007A481C;
+			remoteInfo = "Charge-Stations";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2297F870299E3B5C007A481C /* Charge-Stations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charge-Stations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2297F873299E3B5C007A481C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2297F877299E3B5C007A481C /* ChargeStationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeStationsViewController.swift; sourceTree = "<group>"; };
+		2297F87C299E3B5E007A481C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2297F87F299E3B5E007A481C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2297F881299E3B5E007A481C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2297F886299E3B5E007A481C /* Charge-StationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Charge-StationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2297F8B1299E4030007A481C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2297F8B4299E404D007A481C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2297F8B6299E40A7007A481C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2297F8B9299E40E4007A481C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		2297F8BC299E4123007A481C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2297F8BE299E4376007A481C /* ChargeStationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeStationsViewModel.swift; sourceTree = "<group>"; };
+		2297F8C0299E5961007A481C /* ChargeStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeStation.swift; sourceTree = "<group>"; };
+		2297F8C2299E599E007A481C /* ChargeStationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeStationDetailViewModel.swift; sourceTree = "<group>"; };
+		2297F8C4299E59D4007A481C /* ChargeStationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeStationDetailViewController.swift; sourceTree = "<group>"; };
+		2297F8C6299E696E007A481C /* MKMapView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extensions.swift"; sourceTree = "<group>"; };
+		2297F8C8299E6C8E007A481C /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		2297F8CD299E7DE6007A481C /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		2297F8CF299E7DF0007A481C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		2297F8D1299E7E02007A481C /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		2297F8D4299E7E1F007A481C /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		2297F8D6299E7E26007A481C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2297F8D9299E81B1007A481C /* GetChargeStationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChargeStationRequest.swift; sourceTree = "<group>"; };
+		2297F8DC299E87BF007A481C /* ChargeStationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeStationsService.swift; sourceTree = "<group>"; };
+		2297F8DE299E87CC007A481C /* ChargeStationsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeStationsServiceProtocol.swift; sourceTree = "<group>"; };
+		2297F8E0299E96BC007A481C /* StationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAnnotation.swift; sourceTree = "<group>"; };
+		229AAE48299EA80B00233BC4 /* RequestProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocolTests.swift; sourceTree = "<group>"; };
+		229AAE4D299EA9FB00233BC4 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		229AAE53299EB62900233BC4 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		229AAE55299EB78E00233BC4 /* ChargeStationsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeStationsServiceTests.swift; sourceTree = "<group>"; };
+		229E6E6A299F6F08006EDCDF /* MockResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockResponse.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2297F86D299E3B5C007A481C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2297F883299E3B5E007A481C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2297F867299E3B5C007A481C = {
+			isa = PBXGroup;
+			children = (
+				2297F872299E3B5C007A481C /* Charge-Stations */,
+				2297F889299E3B5E007A481C /* Charge-StationsTests */,
+				2297F871299E3B5C007A481C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2297F871299E3B5C007A481C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2297F870299E3B5C007A481C /* Charge-Stations.app */,
+				2297F886299E3B5E007A481C /* Charge-StationsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2297F872299E3B5C007A481C /* Charge-Stations */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8A4299E3EEC007A481C /* App */,
+				2297F8AE299E3FB0007A481C /* Service */,
+				2297F8A5299E3EF7007A481C /* Scenes */,
+				2297F8AF299E3FB9007A481C /* Utilities */,
+				2297F8A3299E3EE6007A481C /* Supporting Files */,
+			);
+			path = "Charge-Stations";
+			sourceTree = "<group>";
+		};
+		2297F889299E3B5E007A481C /* Charge-StationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				229AAE50299EB40300233BC4 /* Mocks */,
+				229AAE47299EA7F800233BC4 /* Service */,
+				229AAE4A299EA9B600233BC4 /* Coordinator */,
+			);
+			path = "Charge-StationsTests";
+			sourceTree = "<group>";
+		};
+		2297F8A3299E3EE6007A481C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2297F87C299E3B5E007A481C /* Assets.xcassets */,
+				2297F87E299E3B5E007A481C /* LaunchScreen.storyboard */,
+				2297F881299E3B5E007A481C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2297F8A4299E3EEC007A481C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2297F873299E3B5C007A481C /* AppDelegate.swift */,
+				2297F8B4299E404D007A481C /* AppCoordinator.swift */,
+				2297F8B6299E40A7007A481C /* Constants.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2297F8A5299E3EF7007A481C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8A6299E3F02007A481C /* ChargeStations */,
+				2297F8AB299E3F3B007A481C /* ChargeStationDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2297F8A6299E3F02007A481C /* ChargeStations */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8AA299E3F2B007A481C /* Service */,
+				2297F8A9299E3F26007A481C /* ViewModel */,
+				2297F8A8299E3F23007A481C /* Model */,
+				2297F8A7299E3F15007A481C /* View */,
+			);
+			path = ChargeStations;
+			sourceTree = "<group>";
+		};
+		2297F8A7299E3F15007A481C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2297F877299E3B5C007A481C /* ChargeStationsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2297F8A8299E3F23007A481C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8C0299E5961007A481C /* ChargeStation.swift */,
+				2297F8E0299E96BC007A481C /* StationAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2297F8A9299E3F26007A481C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8BE299E4376007A481C /* ChargeStationsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2297F8AA299E3F2B007A481C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8DE299E87CC007A481C /* ChargeStationsServiceProtocol.swift */,
+				2297F8DC299E87BF007A481C /* ChargeStationsService.swift */,
+				2297F8D9299E81B1007A481C /* GetChargeStationRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2297F8AB299E3F3B007A481C /* ChargeStationDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8AD299E3FA6007A481C /* ViewModel */,
+				2297F8AC299E3F94007A481C /* View */,
+			);
+			path = ChargeStationDetails;
+			sourceTree = "<group>";
+		};
+		2297F8AC299E3F94007A481C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8C4299E59D4007A481C /* ChargeStationDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2297F8AD299E3FA6007A481C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8C2299E599E007A481C /* ChargeStationDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2297F8AE299E3FB0007A481C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8D3299E7E07007A481C /* NetworkManager */,
+				2297F8D8299E7E4B007A481C /* NetworkRequest */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2297F8AF299E3FB9007A481C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8B8299E40D7007A481C /* Extensions */,
+				2297F8B0299E402A007A481C /* Coordinator */,
+				2297F8BB299E4118007A481C /* Protocols */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2297F8B0299E402A007A481C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8B1299E4030007A481C /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2297F8B8299E40D7007A481C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8C6299E696E007A481C /* MKMapView+Extensions.swift */,
+				2297F8C8299E6C8E007A481C /* UIStackView+Extensions.swift */,
+				2297F8B9299E40E4007A481C /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2297F8BB299E4118007A481C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8BC299E4123007A481C /* ViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2297F8D3299E7E07007A481C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8D4299E7E1F007A481C /* NetworkManagerProtocol.swift */,
+				2297F8D6299E7E26007A481C /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		2297F8D8299E7E4B007A481C /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				2297F8D1299E7E02007A481C /* RequestProtocol.swift */,
+				2297F8CD299E7DE6007A481C /* RequestError.swift */,
+				2297F8CF299E7DF0007A481C /* HTTPMethod.swift */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		229AAE47299EA7F800233BC4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				229AAE48299EA80B00233BC4 /* RequestProtocolTests.swift */,
+				229AAE55299EB78E00233BC4 /* ChargeStationsServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		229AAE4A299EA9B600233BC4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				229AAE4D299EA9FB00233BC4 /* AppCoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		229AAE50299EB40300233BC4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				229E6E6A299F6F08006EDCDF /* MockResponse.json */,
+				229AAE53299EB62900233BC4 /* MockURLProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2297F86F299E3B5C007A481C /* Charge-Stations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2297F89A299E3B5E007A481C /* Build configuration list for PBXNativeTarget "Charge-Stations" */;
+			buildPhases = (
+				2297F86C299E3B5C007A481C /* Sources */,
+				2297F86D299E3B5C007A481C /* Frameworks */,
+				2297F86E299E3B5C007A481C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Charge-Stations";
+			productName = "Charge-Stations";
+			productReference = 2297F870299E3B5C007A481C /* Charge-Stations.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2297F885299E3B5E007A481C /* Charge-StationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2297F89D299E3B5E007A481C /* Build configuration list for PBXNativeTarget "Charge-StationsTests" */;
+			buildPhases = (
+				2297F882299E3B5E007A481C /* Sources */,
+				2297F883299E3B5E007A481C /* Frameworks */,
+				2297F884299E3B5E007A481C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2297F888299E3B5E007A481C /* PBXTargetDependency */,
+			);
+			name = "Charge-StationsTests";
+			productName = "Charge-StationsTests";
+			productReference = 2297F886299E3B5E007A481C /* Charge-StationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2297F868299E3B5C007A481C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					2297F86F299E3B5C007A481C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					2297F885299E3B5E007A481C = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+						TestTargetID = 2297F86F299E3B5C007A481C;
+					};
+				};
+			};
+			buildConfigurationList = 2297F86B299E3B5C007A481C /* Build configuration list for PBXProject "Charge-Stations" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2297F867299E3B5C007A481C;
+			productRefGroup = 2297F871299E3B5C007A481C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2297F86F299E3B5C007A481C /* Charge-Stations */,
+				2297F885299E3B5E007A481C /* Charge-StationsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2297F86E299E3B5C007A481C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2297F880299E3B5E007A481C /* LaunchScreen.storyboard in Resources */,
+				2297F87D299E3B5E007A481C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2297F884299E3B5E007A481C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229E6E6B299F6F08006EDCDF /* MockResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2297F86C299E3B5C007A481C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2297F8D7299E7E26007A481C /* NetworkManager.swift in Sources */,
+				2297F8CE299E7DE6007A481C /* RequestError.swift in Sources */,
+				2297F8DD299E87BF007A481C /* ChargeStationsService.swift in Sources */,
+				2297F8C1299E5961007A481C /* ChargeStation.swift in Sources */,
+				2297F8DF299E87CC007A481C /* ChargeStationsServiceProtocol.swift in Sources */,
+				2297F8B7299E40A7007A481C /* Constants.swift in Sources */,
+				2297F8C3299E599E007A481C /* ChargeStationDetailViewModel.swift in Sources */,
+				2297F8C5299E59D4007A481C /* ChargeStationDetailViewController.swift in Sources */,
+				2297F8D0299E7DF0007A481C /* HTTPMethod.swift in Sources */,
+				2297F878299E3B5C007A481C /* ChargeStationsViewController.swift in Sources */,
+				2297F874299E3B5C007A481C /* AppDelegate.swift in Sources */,
+				2297F8BF299E4376007A481C /* ChargeStationsViewModel.swift in Sources */,
+				2297F8BA299E40E4007A481C /* UIViewController+Alert.swift in Sources */,
+				2297F8BD299E4123007A481C /* ViewController.swift in Sources */,
+				2297F8D2299E7E02007A481C /* RequestProtocol.swift in Sources */,
+				2297F8D5299E7E1F007A481C /* NetworkManagerProtocol.swift in Sources */,
+				2297F8C7299E696E007A481C /* MKMapView+Extensions.swift in Sources */,
+				2297F8E1299E96BC007A481C /* StationAnnotation.swift in Sources */,
+				2297F8C9299E6C8E007A481C /* UIStackView+Extensions.swift in Sources */,
+				2297F8DA299E81B1007A481C /* GetChargeStationRequest.swift in Sources */,
+				2297F8B2299E4030007A481C /* Coordinator.swift in Sources */,
+				2297F8B5299E404D007A481C /* AppCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2297F882299E3B5E007A481C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229AAE56299EB78E00233BC4 /* ChargeStationsServiceTests.swift in Sources */,
+				229AAE4E299EA9FB00233BC4 /* AppCoordinatorTests.swift in Sources */,
+				229AAE49299EA80B00233BC4 /* RequestProtocolTests.swift in Sources */,
+				229AAE54299EB62900233BC4 /* MockURLProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2297F888299E3B5E007A481C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2297F86F299E3B5C007A481C /* Charge-Stations */;
+			targetProxy = 2297F887299E3B5E007A481C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2297F87E299E3B5E007A481C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2297F87F299E3B5E007A481C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2297F898299E3B5E007A481C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2297F899299E3B5E007A481C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2297F89B299E3B5E007A481C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FNNS73DWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Charge-Stations/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Charge-Stations";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2297F89C299E3B5E007A481C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9FNNS73DWP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Charge-Stations/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Charge-Stations";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2297F89E299E3B5E007A481C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Charge-StationsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Charge-Stations.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Charge-Stations";
+			};
+			name = Debug;
+		};
+		2297F89F299E3B5E007A481C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Charge-StationsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Charge-Stations.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Charge-Stations";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2297F86B299E3B5C007A481C /* Build configuration list for PBXProject "Charge-Stations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2297F898299E3B5E007A481C /* Debug */,
+				2297F899299E3B5E007A481C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2297F89A299E3B5E007A481C /* Build configuration list for PBXNativeTarget "Charge-Stations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2297F89B299E3B5E007A481C /* Debug */,
+				2297F89C299E3B5E007A481C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2297F89D299E3B5E007A481C /* Build configuration list for PBXNativeTarget "Charge-StationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2297F89E299E3B5E007A481C /* Debug */,
+				2297F89F299E3B5E007A481C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2297F868299E3B5C007A481C /* Project object */;
+}

@@ -1,0 +1,317 @@
+[
+    {
+        "DataProvider": {
+            "WebsiteURL": "http://openchargemap.org",
+            "Comments": null,
+            "DataProviderStatusType": {
+                "IsProviderEnabled": true,
+                "ID": 1,
+                "Title": "Manual Data Entry"
+            },
+            "IsRestrictedEdit": false,
+            "IsOpenDataLicensed": true,
+            "IsApprovedImport": true,
+            "License": "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)",
+            "DateLastImported": null,
+            "ID": 1,
+            "Title": "Open Charge Map Contributors"
+        },
+        "OperatorInfo": {
+            "WebsiteURL": "http://www.be-emobil.de/",
+            "Comments": null,
+            "PhonePrimaryContact": "+49 30 20847590",
+            "PhoneSecondaryContact": null,
+            "IsPrivateIndividual": false,
+            "AddressInfo": null,
+            "BookingURL": null,
+            "ContactEmail": "dialog@be-emobil.de",
+            "FaultReportEmail": null,
+            "IsRestrictedEdit": false,
+            "ID": 214,
+            "Title": "be emobil"
+        },
+        "UsageType": {
+            "IsPayAtLocation": false,
+            "IsMembershipRequired": true,
+            "IsAccessKeyRequired": true,
+            "ID": 4,
+            "Title": "Public - Membership Required"
+        },
+        "StatusType": {
+            "IsOperational": true,
+            "IsUserSelectable": true,
+            "ID": 50,
+            "Title": "Operational"
+        },
+        "SubmissionStatus": {
+            "IsLive": true,
+            "ID": 200,
+            "Title": "Submission Published"
+        },
+        "UserComments": null,
+        "PercentageSimilarity": null,
+        "MediaItems": null,
+        "IsRecentlyVerified": false,
+        "DateLastVerified": "2017-05-08T07:17:00Z",
+        "ID": 87439,
+        "UUID": "3ED6B656-9962-470B-BF0A-B3F5306743F3",
+        "ParentChargePointID": null,
+        "DataProviderID": 1,
+        "DataProvidersReference": null,
+        "OperatorID": 214,
+        "OperatorsReference": null,
+        "UsageTypeID": 4,
+        "UsageCost": null,
+        "AddressInfo": {
+            "ID": 87785,
+            "Title": "Karl-Liebknecht-Straße",
+            "AddressLine1": "Karl-Liebknecht-Straße 29",
+            "AddressLine2": "Mitte",
+            "Town": "Berlin",
+            "StateOrProvince": "Berlin",
+            "Postcode": "10178",
+            "CountryID": 87,
+            "Country": {
+                "ISOCode": "DE",
+                "ContinentCode": "EU",
+                "ID": 87,
+                "Title": "Germany"
+            },
+            "Latitude": 52.524438232115585,
+            "Longitude": 13.412951344982966,
+            "ContactTelephone1": null,
+            "ContactTelephone2": null,
+            "ContactEmail": null,
+            "AccessComments": "24/7 nutzbar mit 2 kostenlosen Parkplätzen.",
+            "RelatedURL": null,
+            "Distance": 0.22218678274026588,
+            "DistanceUnit": 1
+        },
+        "Connections": [
+            {
+                "ID": 123951,
+                "ConnectionTypeID": 25,
+                "ConnectionType": {
+                    "FormalName": "IEC 62196-2 Type 2",
+                    "IsDiscontinued": false,
+                    "IsObsolete": false,
+                    "ID": 25,
+                    "Title": "Type 2 (Socket Only)"
+                },
+                "Reference": null,
+                "StatusTypeID": 50,
+                "StatusType": {
+                    "IsOperational": true,
+                    "IsUserSelectable": true,
+                    "ID": 50,
+                    "Title": "Operational"
+                },
+                "LevelID": 2,
+                "Level": {
+                    "Comments": "Over 2 kW, usually non-domestic socket type",
+                    "IsFastChargeCapable": false,
+                    "ID": 2,
+                    "Title": "Level 2 : Medium (Over 2kW)"
+                },
+                "Amps": 16,
+                "Voltage": 400,
+                "PowerKW": 11.0,
+                "CurrentTypeID": 20,
+                "CurrentType": {
+                    "Description": "Alternating Current - Three Phase",
+                    "ID": 20,
+                    "Title": "AC (Three-Phase)"
+                },
+                "Quantity": 2,
+                "Comments": null
+            }
+        ],
+        "NumberOfPoints": 2,
+        "GeneralComments": null,
+        "DatePlanned": null,
+        "DateLastConfirmed": null,
+        "StatusTypeID": 50,
+        "DateLastStatusUpdate": "2017-05-08T07:17:00Z",
+        "MetadataValues": null,
+        "DataQualityLevel": 1,
+        "DateCreated": "2017-05-08T07:17:00Z",
+        "SubmissionStatusTypeID": 200
+    },
+    {
+        "DataProvider": {
+            "WebsiteURL": "https://bundesnetzagentur.de",
+            "Comments": null,
+            "DataProviderStatusType": {
+                "IsProviderEnabled": true,
+                "ID": 20,
+                "Title": "Automated Import"
+            },
+            "IsRestrictedEdit": false,
+            "IsOpenDataLicensed": true,
+            "IsApprovedImport": true,
+            "License": "Provided by Bundesnetzagentur.de under the CC-BY 4.0 license",
+            "DateLastImported": "2021-07-12T02:21:34.507Z",
+            "ID": 29,
+            "Title": "Bundesnetzagentur.de"
+        },
+        "OperatorInfo": {
+            "WebsiteURL": "http://www.allego.eu/",
+            "Comments": null,
+            "PhonePrimaryContact": null,
+            "PhoneSecondaryContact": null,
+            "IsPrivateIndividual": false,
+            "AddressInfo": null,
+            "BookingURL": null,
+            "ContactEmail": "info@allego.eu",
+            "FaultReportEmail": null,
+            "IsRestrictedEdit": false,
+            "ID": 103,
+            "Title": "Allego BV"
+        },
+        "UsageType": null,
+        "StatusType": {
+            "IsOperational": true,
+            "IsUserSelectable": true,
+            "ID": 50,
+            "Title": "Operational"
+        },
+        "SubmissionStatus": {
+            "IsLive": true,
+            "ID": 100,
+            "Title": "Imported and Published"
+        },
+        "UserComments": null,
+        "PercentageSimilarity": null,
+        "MediaItems": null,
+        "IsRecentlyVerified": false,
+        "DateLastVerified": "2021-07-12T02:50:00Z",
+        "ID": 183437,
+        "UUID": "8B80F08D-1F60-4CB9-9BB6-3BCF75AD7954",
+        "ParentChargePointID": null,
+        "DataProviderID": 29,
+        "DataProvidersReference": "994",
+        "OperatorID": 103,
+        "OperatorsReference": null,
+        "UsageTypeID": null,
+        "UsageCost": null,
+        "AddressInfo": {
+            "ID": 183796,
+            "Title": "Straßburger Str. 2",
+            "AddressLine1": "Straßburger Str. 2",
+            "AddressLine2": null,
+            "Town": "Berlin",
+            "StateOrProvince": null,
+            "Postcode": "10405",
+            "CountryID": 87,
+            "Country": {
+                "ISOCode": "DE",
+                "ContinentCode": "EU",
+                "ID": 87,
+                "Title": "Germany"
+            },
+            "Latitude": 52.528486,
+            "Longitude": 13.412186,
+            "ContactTelephone1": null,
+            "ContactTelephone2": null,
+            "ContactEmail": null,
+            "AccessComments": null,
+            "RelatedURL": null,
+            "Distance": 0.33563771679338417,
+            "DistanceUnit": 1
+        },
+        "Connections": [
+            {
+                "ID": 290423,
+                "ConnectionTypeID": 25,
+                "ConnectionType": {
+                    "FormalName": "IEC 62196-2 Type 2",
+                    "IsDiscontinued": false,
+                    "IsObsolete": false,
+                    "ID": 25,
+                    "Title": "Type 2 (Socket Only)"
+                },
+                "Reference": null,
+                "StatusTypeID": 50,
+                "StatusType": {
+                    "IsOperational": true,
+                    "IsUserSelectable": true,
+                    "ID": 50,
+                    "Title": "Operational"
+                },
+                "LevelID": 2,
+                "Level": {
+                    "Comments": "Over 2 kW, usually non-domestic socket type",
+                    "IsFastChargeCapable": false,
+                    "ID": 2,
+                    "Title": "Level 2 : Medium (Over 2kW)"
+                },
+                "Amps": null,
+                "Voltage": null,
+                "PowerKW": 11.0,
+                "CurrentTypeID": 20,
+                "CurrentType": {
+                    "Description": "Alternating Current - Three Phase",
+                    "ID": 20,
+                    "Title": "AC (Three-Phase)"
+                },
+                "Quantity": null,
+                "Comments": null
+            },
+            {
+                "ID": 290424,
+                "ConnectionTypeID": 25,
+                "ConnectionType": {
+                    "FormalName": "IEC 62196-2 Type 2",
+                    "IsDiscontinued": false,
+                    "IsObsolete": false,
+                    "ID": 25,
+                    "Title": "Type 2 (Socket Only)"
+                },
+                "Reference": null,
+                "StatusTypeID": 50,
+                "StatusType": {
+                    "IsOperational": true,
+                    "IsUserSelectable": true,
+                    "ID": 50,
+                    "Title": "Operational"
+                },
+                "LevelID": 2,
+                "Level": {
+                    "Comments": "Over 2 kW, usually non-domestic socket type",
+                    "IsFastChargeCapable": false,
+                    "ID": 2,
+                    "Title": "Level 2 : Medium (Over 2kW)"
+                },
+                "Amps": null,
+                "Voltage": null,
+                "PowerKW": 11.0,
+                "CurrentTypeID": 20,
+                "CurrentType": {
+                    "Description": "Alternating Current - Three Phase",
+                    "ID": 20,
+                    "Title": "AC (Three-Phase)"
+                },
+                "Quantity": null,
+                "Comments": null
+            }
+        ],
+        "NumberOfPoints": null,
+        "GeneralComments": null,
+        "DatePlanned": null,
+        "DateLastConfirmed": null,
+        "StatusTypeID": 50,
+        "DateLastStatusUpdate": "2021-07-12T02:50:00Z",
+        "MetadataValues": [
+            {
+                "ID": 15730,
+                "MetadataFieldID": 4,
+                "ItemValue": "Data from the German chargepoint registry provided by Bundesnetzagentur.de under the CC-BY 4.0 license",
+                "MetadataFieldOption": null,
+                "MetadataFieldOptionID": null
+            }
+        ],
+        "DataQualityLevel": 3,
+        "DateCreated": "2021-07-08T10:04:00Z",
+        "SubmissionStatusTypeID": 100
+    }
+]
